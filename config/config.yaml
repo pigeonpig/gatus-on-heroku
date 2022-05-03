@@ -1,6 +1,6 @@
 storage:
-  type: postgres
-  path: "postgres://username:password@postgres:5432/gatus?sslmode=disable"
+  type: sqlite
+  path: /data/data.db
 
 endpoints:
   - name: back-end
