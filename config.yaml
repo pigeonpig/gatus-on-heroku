@@ -1,16 +1,47 @@
 web:
   port: ${PORT} 
 services:
-  - name: DevOps Project PaaS - Production
+  - name: cloudflare alist
     group: core
-    url: "https://ing4ecedevops-production.osc-fr1.scalingo.io/"
-    interval: 30s
+    url: "https://alist.learnonly.xyz/"
+    interval: 60s
     conditions:
       - "[STATUS] == 200"
       - "[RESPONSE_TIME] < 1000"
-  - name: DevOps Project PaaS - Staging
-    url: "https://ing4ecedevops-staging.osc-fr1.scalingo.io/"
-    interval: 30s
+  - name: cloudflare cloud
+    url: "https://cloud.learnonly.xyz/"
+    interval: 60s
     conditions:
       - "[STATUS] == 200"
       - "[RESPONSE_TIME] < 1000"
+  - name: cloudflare blog
+    url: "https://blog.learnonly.xyz/"
+    interval: 60s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 1000"
+  - name: cloudflare kodbox
+    url: "https://kodbox.learnonly.xyz/"
+    interval: 60s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 1000"
+  - name: cloudflare music
+    url: "https://music.learnonly.xyz/"
+    interval: 60s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 1000"
+  - name: cloudflare todo
+    url: "https://todo.learnonly.xyz/"
+    interval: 60s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 1000"
+  - name: cloudflare v2personal
+    url: "https://v2personal.learnonly.xyz/"
+    interval: 60s
+    conditions:
+      - "[STATUS] == 200"
+      - "[RESPONSE_TIME] < 1000"
+      
