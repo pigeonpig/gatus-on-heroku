@@ -6,8 +6,7 @@
     "ADATABASE": {
        "description": "数据库类型（sqlite3 / mysql）",
        "value": "sqlite3"
-    },
-  },
+    }
   "website": "https://github.com/pigeonpig/gatus-on-heroku",
   "repository": "https://github.com/pigeonpig/gatus-on-heroku",
   "stack": "container"
