@@ -2,6 +2,12 @@
   "name": "gatus heroku",
   "description": "gatus heroku",
   "keywords": ["gatus"],
+  "env": {
+       "PORT": {
+       "description": "端口随意",
+       "value": "8080"
+         }
+    },
   "website": "https://github.com/pigeonpig/gatus-on-heroku",
   "repository": "https://github.com/pigeonpig/gatus-on-heroku",
   "stack": "container"
