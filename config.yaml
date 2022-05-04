@@ -33,11 +33,11 @@ services:
       - "[STATUS] == 200"
       - "[RESPONSE_TIME] < 1000"
   - name: cloudflare todo
-    url: "https://todo.learnonly.xyz/?controller=AuthController&action=login"
+    url: "https://todo.learnonly.xyz/"
     interval: 60s
     conditions:
       - "[STATUS] == 200"
-      - "[RESPONSE_TIME] < 1000"
+      - "[RESPONSE_TIME] < 2000"
   - name: cloudflare v2personal
     url: "https://v2personal.learnonly.xyz/"
     interval: 60s
