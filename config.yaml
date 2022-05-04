@@ -33,7 +33,7 @@ services:
       - "[STATUS] == 200"
       - "[RESPONSE_TIME] < 1000"
   - name: cloudflare todo
-    url: "https://todo.learnonly.xyz/"
+    url: "https://todo.learnonly.xyz/?controller=AuthController&action=login"
     interval: 60s
     conditions:
       - "[STATUS] == 200"
